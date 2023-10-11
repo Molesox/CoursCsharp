@@ -1,0 +1,15 @@
+C:\Users\dsanz\Desktop\Cours c#\Cours01\bin\Debug\net7.0\Cours01.exe
+C:\Users\dsanz\Desktop\Cours c#\Cours01\bin\Debug\net7.0\Cours01.deps.json
+C:\Users\dsanz\Desktop\Cours c#\Cours01\bin\Debug\net7.0\Cours01.runtimeconfig.json
+C:\Users\dsanz\Desktop\Cours c#\Cours01\bin\Debug\net7.0\Cours01.dll
+C:\Users\dsanz\Desktop\Cours c#\Cours01\bin\Debug\net7.0\Cours01.pdb
+C:\Users\dsanz\Desktop\Cours c#\Cours01\obj\Debug\net7.0\Cours01.csproj.AssemblyReference.cache
+C:\Users\dsanz\Desktop\Cours c#\Cours01\obj\Debug\net7.0\Cours01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dsanz\Desktop\Cours c#\Cours01\obj\Debug\net7.0\Cours01.AssemblyInfoInputs.cache
+C:\Users\dsanz\Desktop\Cours c#\Cours01\obj\Debug\net7.0\Cours01.AssemblyInfo.cs
+C:\Users\dsanz\Desktop\Cours c#\Cours01\obj\Debug\net7.0\Cours01.csproj.CoreCompileInputs.cache
+C:\Users\dsanz\Desktop\Cours c#\Cours01\obj\Debug\net7.0\Cours01.dll
+C:\Users\dsanz\Desktop\Cours c#\Cours01\obj\Debug\net7.0\refint\Cours01.dll
+C:\Users\dsanz\Desktop\Cours c#\Cours01\obj\Debug\net7.0\Cours01.pdb
+C:\Users\dsanz\Desktop\Cours c#\Cours01\obj\Debug\net7.0\Cours01.genruntimeconfig.cache
+C:\Users\dsanz\Desktop\Cours c#\Cours01\obj\Debug\net7.0\ref\Cours01.dll
