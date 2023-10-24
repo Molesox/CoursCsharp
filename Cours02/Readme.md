@@ -14,8 +14,8 @@ Dans cet exo, vous allez créer une classe de **base** représentant un véhicul
     - `Age` pour l'âge du véhicule (attribut calculé).
 
 **Constructeur :**
-    - Ajoutez un constructeur public à la classe `Vehicule`. Ce constructeur doit accepter trois paramètres : `Marque`, `DateAchat`, et `PrixDachat`, correspondant aux attributs ci-dessus.
-    - Le constructeur doit initialiser les attributs de l'instance avec les valeurs fournies. 
+  - Ajoutez un constructeur public à la classe `Vehicule`. Ce constructeur doit accepter trois paramètres : `Marque`, `DateAchat`, et `PrixDachat`, correspondant aux attributs ci-dessus.
+  - Le constructeur doit initialiser les attributs de l'instance avec les valeurs fournies. 
 
  
 **Surcharge de Méthode :**
@@ -46,8 +46,8 @@ Maintenant, vous allez **étendre** la classe `Vehicule` pour créer des classes
     - `Kilometrage` pour le kilométrage de la voiture.
 
 **[Constructeur](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors) :**
-    - Ajoutez un constructeur public à la classe `Voiture`. Ce constructeur doit accepter les paramètres nécessaires pour initialiser **tous** les attributs.
-    - Utilisez l'instruction [`base`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/base) pour appeler le [constructeur](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/using-constructors) (pas le même lien) de la classe **parente** `Vehicule`.
+  - Ajoutez un constructeur public à la classe `Voiture`. Ce constructeur doit accepter les paramètres nécessaires pour initialiser **tous** les attributs.
+  - Utilisez l'instruction [`base`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/base) pour appeler le [constructeur](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/using-constructors) (pas le même lien) de la classe **parente** `Vehicule`.
 
 **ToString() :**
     - Modifier le code pour que la méthode ``ToString()`` affiche non seulement les informations de base du véhicule, mais aussi les détails spécifiques à la `Voiture`.
@@ -62,8 +62,8 @@ Maintenant, vous allez **étendre** la classe `Vehicule` pour créer des classes
     - `HeuresDeVol` pour le nombre d'heures de vol de l'avion.
 
 **Constructeur :**
-    - Ajoutez un constructeur public à la classe `Avion`. Ce constructeur doit accepter les paramètres nécessaires pour initialiser **tous** les attributs.
-    - Utilisez l'instruction `base` pour appeler le constructeur de la classe parente `Vehicule`.
+  - Ajoutez un constructeur public à la classe `Avion`. Ce constructeur doit accepter les paramètres nécessaires pour initialiser **tous** les attributs.
+  - Utilisez l'instruction `base` pour appeler le constructeur de la classe parente `Vehicule`.
 
 **ToString() :**
    - Modifier le code pour que la méthode ``ToString()`` affiche non seulement les informations de base du véhicule, mais aussi les détails spécifiques à la `Avion`.
@@ -114,7 +114,7 @@ List<Voiture> garage = new List<Voiture>
 List<Avion> hangar = new List<Avion>
 {
     new Avion("Boeing", new DateTime(2008, 11, 10), 150000, AvionType.Reaction, 1200.5m),
-    new Avion("Sesna", new DateTime(1972, 1, 1), 1230673.90m, AvionType.Helice, 250),
+    new Avion("Cesna", new DateTime(1972, 1, 1), 1230673.90m, AvionType.Helice, 250),
 };
 
 Console.WriteLine("Voitures:");
@@ -181,7 +181,7 @@ Prix courant: 131'992,50 CHF
 Type d'avion: Reaction
 Heures de vol: 1'200.5
 -----------------------------
-Marque: Sesna
+Marque: Cesna
 Date d'achat: 01.01.1972
 Âge du véhicule: 51 années
 Prix d'achat: 1'230'673,90 CHF
@@ -222,7 +222,7 @@ Prix courant: 127'500,00 CHF
 Type d'avion: Reaction
 Heures de vol: 1'200.5
 -----------------------------
-Marque: Sesna
+Marque: Cesna
 Date d'achat: 01.01.1972
 Âge du véhicule: 51 années
 Prix d'achat: 1'230'673,90 CHF
