@@ -30,7 +30,7 @@ Dans cette méthode, retournez une chaîne de caractères qui représente l'éta
 
 
 ---
-## Les enfants
+## Les classes enfant
 
 Maintenant, vous allez **étendre** la classe `Vehicule` pour créer des classes spécialisées représentant différents types de véhicules : une `Voiture` et un `Avion`. Ces nouvelles classes incluront des attributs spécifiques à chaque type.
 
