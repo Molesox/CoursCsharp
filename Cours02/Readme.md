@@ -276,7 +276,9 @@ Pour réaliser cela, nous devons modifier la signature de la méthode `CalculerP
  public virtual void CalculerPrix(){}
 ```
 
-En déclarant la méthode comme `virtual`, nous autorisons les classes dérivées à fournir leur propre implémentation de cette méthode, en la *remplaçant* / *surchargeant*.  Cela signifie que si la méthode est définie à nouveau dans une classe fille, cette nouvelle version sera appelée à la place de la méthode originale de la classe parente, en fonction du type réel de l'objet.
+En déclarant la méthode comme `virtual`, nous autorisons les classes dérivées à fournir leur propre implémentation de cette méthode, en la *remplaçant* / *surchargeant*.  Cela signifie que si la méthode est définie à nouveau dans une classe fille, cette nouvelle version sera appelée à la place de la méthode originale de la classe parente, en fonction du type réel de l'objet. 
+
+À noter qu'autoriser **n**'est **pas** obliger.
 
 Ce processus est rendu possible par un mécanisme appelé "liaison tardive" ou "liaison dynamique". Contrairement à la "liaison précoce" où l'adresse de la méthode à exécuter est déterminée lors de la compilation, la liaison tardive diffère cette décision jusqu'à l'exécution du programme. Cela signifie que le code compile une sorte de "référence" ou de "pointeur" à la méthode, plutôt que de lier directement à l'implémentation spécifique de la méthode.
 
