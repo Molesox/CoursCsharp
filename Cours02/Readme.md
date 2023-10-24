@@ -5,13 +5,13 @@ Voici quelques exercices pour s'entraîner à l'héritage & cie. Pour optimiser 
 Dans cet exo, vous allez créer une classe de **base** représentant un véhicule. Cette classe intégrera des informations générales pertinentes pour tous les types de véhicules.
 
 **Définition de la Classe :**
-    - Créez un fichier nommé `Vehicule.cs`.
-    - Dans ce fichier, définissez une classe publique `Vehicule` qui inclut les attributs suivants :
-        - `Marque` pour la marque du véhicule.
-        - `DateAchat` pour la date d'achat du véhicule.
-        - `PrixDAchat` pour le prix d'achat du véhicule.
-        - `PrixCourant` pour le prix courant du véhicule (attribut calculé).
-        - `Age` pour l'âge du véhicule (attribut calculé).
+- Créez un fichier nommé `Vehicule.cs`.
+- Dans ce fichier, définissez une classe publique `Vehicule` qui inclut les attributs suivants :
+    - `Marque` pour la marque du véhicule.
+    - `DateAchat` pour la date d'achat du véhicule.
+    - `PrixDAchat` pour le prix d'achat du véhicule.
+    - `PrixCourant` pour le prix courant du véhicule (attribut calculé).
+    - `Age` pour l'âge du véhicule (attribut calculé).
 
 **Constructeur :**
     - Ajoutez un constructeur public à la classe `Vehicule`. Ce constructeur doit accepter trois paramètres : `Marque`, `DateAchat`, et `PrixDachat`, correspondant aux attributs ci-dessus.
