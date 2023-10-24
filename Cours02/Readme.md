@@ -37,13 +37,13 @@ Maintenant, vous allez **étendre** la classe `Vehicule` pour créer des classes
 ### Classe `Voiture.cs`
 
 **Définition de la Classe :**
-    - Créez un nouveau fichier nommé `Voiture.cs`.
-    - Définissez une [classe](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/class) publique `Voiture` qui hérite de la classe `Vehicule`.
-    - Ajoutez les attributs suivants à la classe `Voiture` :
-        - `Cylindree` pour la cylindrée de la voiture.
-        - `NombreDePortes` pour le nombre de portes de la voiture.
-        - `Puissance` pour la puissance de la voiture.
-        - `Kilometrage` pour le kilométrage de la voiture.
+- Créez un nouveau fichier nommé `Voiture.cs`.
+- Définissez une [classe](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/class) publique `Voiture` qui hérite de la classe `Vehicule`.
+- Ajoutez les attributs suivants à la classe `Voiture` :
+    - `Cylindree` pour la cylindrée de la voiture.
+    - `NombreDePortes` pour le nombre de portes de la voiture.
+    - `Puissance` pour la puissance de la voiture.
+    - `Kilometrage` pour le kilométrage de la voiture.
 
 **[Constructeur](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors) :**
     - Ajoutez un constructeur public à la classe `Voiture`. Ce constructeur doit accepter les paramètres nécessaires pour initialiser **tous** les attributs.
@@ -55,11 +55,11 @@ Maintenant, vous allez **étendre** la classe `Vehicule` pour créer des classes
 ### Classe `Avion.cs`
 
 **Définition de la Classe :**
-    - Créez un nouveau fichier nommé `Avion.cs`.
-    - Définissez la **sous-classe** publique `Avion` qui hérite de la classe `Vehicule`.
-    - Ajoutez les attributs suivants à la classe `Avion` :
-        - `Type` pour le type d'avion (hélices ou réaction).
-        - `HeuresDeVol` pour le nombre d'heures de vol de l'avion.
+- Créez un nouveau fichier nommé `Avion.cs`.
+- Définissez la **sous-classe** publique `Avion` qui hérite de la classe `Vehicule`.
+- Ajoutez les attributs suivants à la classe `Avion` :
+    - `Type` pour le type d'avion (hélices ou réaction).
+    - `HeuresDeVol` pour le nombre d'heures de vol de l'avion.
 
 **Constructeur :**
     - Ajoutez un constructeur public à la classe `Avion`. Ce constructeur doit accepter les paramètres nécessaires pour initialiser **tous** les attributs.
@@ -132,7 +132,7 @@ foreach (var avion in hangar)
 } 
 ```
 
-En l'état actuel, le résultat devrait ressembler à ce qui suit. 
+En l'état actuel, le résultat devrait ressembler à ce qui suit. 
 ### Voitures
 
 ```
