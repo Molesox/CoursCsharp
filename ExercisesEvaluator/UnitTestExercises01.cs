@@ -17,7 +17,7 @@ public class UnitTestExercises01
     }
 
     [Theory]
-    [InlineData(0, "T = 32F")] // 0 degrees Celsius should be 32 degrees Fahrenheit
+    [InlineData(0, "T = 32.00F")] // 0 degrees Celsius should be 32 degrees Fahrenheit
     [InlineData(-300, "Temperature below absolute zero!")] // Below absolute zero
     [InlineData(28.5, "T = 83.30F")] // 28.5 degrees Celsius should be 83.3 degrees Fahrenheit
     public void TestCelsiusToFahr(double celsius, string expected)
