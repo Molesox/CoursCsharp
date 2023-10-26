@@ -10,7 +10,7 @@ public class UnitTestExercises01
     [InlineData(0, true)]
     [InlineData(-2, true)]
     [InlineData(7, false)]
-    public void TestIsPair(int number, bool expectedResult)
+    public void TestIsEven(int number, bool expectedResult)
     {
         var result = Exercises01.IsEven(number);
         Assert.Equal(expectedResult, result);
