@@ -10,7 +10,7 @@ namespace Cours01
         /// <returns>True if the number is even, false otherwise.</returns>
         public static bool IsEven(int number)
         {
-            return false;
+            return number % 2 == 0;
         }
 
         /// <summary>
@@ -22,15 +22,15 @@ namespace Cours01
         /// <returns>The temperature in Fahrenheit with a formatted result, or an error message for invalid input.</returns>
         public static string CelsiusToFahrenheit(double celsius)
         {
-            /*
-            Expected Output: 
-            0 -> "T = 32F"
-            -300 -> "Temperature cannot be below absolute 0!"
-            28.5 -> "T = 83.30F" 
-            
-            */
-       
-            return string.Empty;
+            double fahrenheit;
+
+            if (celsius < -273.15) return "Temperature below absolute zero!";
+
+
+            fahrenheit = celsius * 1.8 + 32.0;
+
+            return $"T = {fahrenheit:F2}F";
+
         }
 
         /// <summary>
@@ -40,6 +40,21 @@ namespace Cours01
         /// <returns>True if the array is sorted in ascending order, false otherwise.</returns>
         public static bool IsSortedAscending(int[] arr)
         {
+            if (arr is null || arr.Length <= 0) return false;
+
+            int previous = -1;
+            foreach (var val in arr)
+            {
+                if (val > previous)
+                {
+                    previous = val;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
             return true;
         }
 
@@ -49,23 +64,36 @@ namespace Cours01
         /// <returns>A string representing the Christmas tree shape.</returns>
         public static string DrawChristmasTree()
         {
-            /*
-             - Expected Output:
-             -    *
-             -   ***
-             -  *****
-             - *******
-             -    *
-             -   ***
-             -  *****
-             - *******
-             -    *
-             -   ***
-             -  *****
-             - *******
-             */
+            string result = string.Empty;
+            for (var i = 0; i < 3; i++)
+            {
+                for (var j = 0; j < 7; j += 2)
+                {
+                    int spaces = (7 - j) / 2;
 
-            return string.Empty;
+                    for (var k = 0; k < spaces; k++)
+                    {
+                        result += " ";
+                        Console.Write(" ");
+                    }
+
+                    for (var m = 0; m <= j; m++)
+                    {
+                        result += "*";
+                        Console.Write("*");
+                    }
+
+                    for (var n = spaces; n < 7; n++)
+                    {
+                        result += " ";
+                        Console.Write(" ");
+                    }
+
+                    result += "\n";
+                    Console.WriteLine();
+                }
+            }
+            return result;
         }
 
     }
