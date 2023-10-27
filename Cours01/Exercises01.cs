@@ -45,7 +45,7 @@ namespace Cours01
             int previous = -1;
             foreach (var val in arr)
             {
-                if (val > previous)
+                if (val >= previous && val > 0)
                 {
                     previous = val;
                 }
@@ -74,19 +74,19 @@ namespace Cours01
                     for (var k = 0; k < spaces; k++)
                     {
                         result += " ";
-                        Console.Write(" ");
+                        // Console.Write(" ");
                     }
 
                     for (var m = 0; m <= j; m++)
                     {
                         result += "*";
-                        Console.Write("*");
+                        // Console.Write("*");
                     }
 
-                    for (var n = spaces; n < 7; n++)
+                    for (var n = (7 - j) / 2; n < 7; n++)
                     {
                         result += " ";
-                        Console.Write(" ");
+                        // Console.Write(" ");
                     }
 
                     result += "\n";

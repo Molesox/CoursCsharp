@@ -35,6 +35,7 @@ public class UnitTestExercises01
     [InlineData(null, false)]
     [InlineData(new int[] { 1 }, true)]
     [InlineData(new int[] { 1, 2, 7 }, true)]
+    [InlineData(new int[] { 2, 2, 2 }, true)]
     [InlineData(new int[] { 8, 9999 }, true)]
     public void TestSorting(int[] value, bool expectedResult)
     {
