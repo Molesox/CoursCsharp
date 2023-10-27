@@ -19,23 +19,3 @@ genf.AddRange(hangar);
 genf.AddRange(garage);
 
 Console.WriteLine($"Il y a {genf.Count} véhicules dans l'aeroport.");
-
-// foreach (var vehicule in genf)
-// {
-//     Console.WriteLine($"Véhicule : {vehicule.Marque} au prix de {vehicule.PrixCourant:C2}");
-//     vehicule.PreparerPourVente();
-//     Console.WriteLine($"Prix Courant màj  {vehicule.PrixCourant:C2}");
-//     Console.WriteLine("-----------");
-// }
-
-double GetForce(ISupportNewton item)
-{
-    return item.Masse * item.Acceleration;
-}
-
-var bb8 = new Balle() { Couleur = "rouge" };
-var r2d2 = new Balle();
-
-Console.WriteLine("Force = " + GetForce(r2d2));
-
-Console.WriteLine("Force = " + GetForce(garage.First()));

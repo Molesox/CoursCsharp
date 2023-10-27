@@ -13,6 +13,7 @@ namespace Cours03
         {
             get
             {
+                CalculerPrix();
                 return _prixCourant;
             }
             protected set

@@ -1,6 +1,5 @@
 using Cours02;
-
-/*
+ 
 List<Voiture> garage = new List<Voiture>
         {
             new Voiture("Peugeot", new DateTime(1998, 01, 01), 147325.79m, 2.5, 5, 180.0, 12000),
@@ -15,31 +14,18 @@ List<Avion> hangar = new List<Avion>
 
         };
 
-Console.WriteLine("Voitures:");
-foreach (var voiture in garage)
-{
-    voiture.CalculerPrix();
-    Console.WriteLine(voiture);
-}
-
-Console.WriteLine("\nAvions:");
-foreach (var avion in hangar)
-{
-    avion.CalculerPrix();
-    Console.WriteLine(avion);
-}
-*/
-
-/*
+ 
 var genf = new Aeroport();
+
 genf.AddRange(hangar);
 genf.AddRange(garage);
+
 Console.WriteLine($"Il y a {genf.Count} véhicules dans l'aeroport.");
 
 foreach (var vehiculce in genf)
 {
-    vehiculce.CalculerPrix();
+    // vehiculce.CalculerPrix();
     Console.WriteLine(vehiculce);
 }
 
-*/
+ 
