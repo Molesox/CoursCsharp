@@ -11,7 +11,6 @@ List<Avion> hangar = new List<Avion>
         {
             new Avion("Boeing", new DateTime(2008, 11, 10), 150000, AvionType.Reaction, 1200.5m),
             new Avion("Sesna", new DateTime(1972, 1, 1), 1230673.90m, AvionType.Helice, 250),
-
         };
 
  
@@ -24,7 +23,7 @@ Console.WriteLine($"Il y a {genf.Count} véhicules dans l'aeroport.");
 
 foreach (var vehiculce in genf)
 {
-    // vehiculce.CalculerPrix();
+    //vehiculce.CalculerPrixCourant();// plus besoin, ni possible.
     Console.WriteLine(vehiculce);
 }
 

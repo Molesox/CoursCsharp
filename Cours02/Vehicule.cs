@@ -34,7 +34,7 @@ namespace Cours02
             get
             {
 
-                CalculerPrix();
+                CalculerPrixCourant();
                 return _prixCourant;
             }
             protected set
@@ -80,7 +80,7 @@ namespace Cours02
         /// The actual calculation will be implemented in derived classes, considering the specifics of each vehicle type.
         /// </summary>
         /// <param name="utiliserArrondi">Indicates whether rounding should be applied during calculation.</param>
-        public abstract void CalculerPrix(bool utiliserArrondi = false);
+        protected abstract void CalculerPrixCourant(bool utiliserArrondi = false);
 
         #region Overrides
 

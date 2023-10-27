@@ -62,7 +62,7 @@ namespace Cours02
         /// </summary>
         /// <param name="utiliserArrondi">Indicates whether to round the depreciation
         /// based on mileage to the nearest 10,000 km increment or use the exact value.</param>
-        public override void CalculerPrix(bool utiliserArrondi = false)
+        protected override void CalculerPrixCourant(bool utiliserArrondi = false)
         {
 
             // Calculer la dépréciation basée sur l'âge de la voiture.

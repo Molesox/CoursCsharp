@@ -57,7 +57,7 @@ namespace Cours02
         /// </summary>
         /// <param name="utiliserArrondi">Indicates whether to round the depreciation
         /// based on flight hours to the nearest interval increment or use the exact value.</param>
-        public override void CalculerPrix(bool utiliserArrondi = false)
+        protected override void CalculerPrixCourant(bool utiliserArrondi = false)
         {
             decimal facteurTranche = Type switch
             {
