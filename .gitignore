@@ -1,4 +1,4 @@
-/.vscode
+**/.vscode
 **/bin
 **/obj
 .fake
@@ -7,3 +7,4 @@
 # Avion.cs
 # Vehicule.cs
 # Voiture.cs
+Todapp/appsettings.json
