@@ -8,9 +8,9 @@ namespace Todapp.Data.Services
 
     public class UserServiceDapper : IUserService
     {
-        private readonly DapperContext _context;
+        private readonly SqlContext _context;
 
-        public UserServiceDapper(DapperContext context)
+        public UserServiceDapper(SqlContext context)
         {
             _context = context;
         }
@@ -28,13 +28,36 @@ namespace Todapp.Data.Services
 
         public async Task<bool> DeleteUserAsync(User user)
         {
-            const string query = "DELETE FROM Users WHERE UserId = @UserId";
+            const string deleteTodoItemsQuery = "DELETE FROM TodoItems WHERE UserId = @UserId";
+            const string deleteUserQuery = "DELETE FROM Users WHERE UserId = @UserId";
+
             using (var conn = _context.CreateConnection())
             {
-                var affectedRows = await conn.ExecuteAsync(query, new { user.UserId });
-                return affectedRows > 0;
+                await conn.OpenAsync();
+                using (var transaction = conn.BeginTransaction())
+                {
+                    try
+                    {
+                        
+                        await conn.ExecuteAsync(deleteTodoItemsQuery, new { user.UserId }, transaction);
+
+                        // Then delete the User
+                        var affectedRows = await conn.ExecuteAsync(deleteUserQuery, new { user.UserId }, transaction);
+
+                        
+                        transaction.Commit();
+
+                        return affectedRows > 0;
+                    }
+                    catch (Exception)
+                    {
+                        transaction.Rollback();
+                        throw;
+                    }
+                }
             }
         }
+
 
         public async Task<User[]> GetUsersAsync()
         {

@@ -7,9 +7,9 @@ namespace Todapp.Data.Services
 {
     public class TodoItemServiceDapper : ITodoItemService
     {
-        private readonly DapperContext _context;
+        private readonly SqlContext _context;
 
-        public TodoItemServiceDapper(DapperContext context)
+        public TodoItemServiceDapper(SqlContext context)
         {
             _context = context;
         }
@@ -59,8 +59,7 @@ namespace Todapp.Data.Services
             using (var conn = _context.CreateConnection())
             {
                 var affectedRows = await conn.ExecuteAsync(query, todoItem);
-                if (affectedRows > 0)
-                    return todoItem;
+                if (affectedRows > 0) return todoItem;
                 return null;
             }
         }

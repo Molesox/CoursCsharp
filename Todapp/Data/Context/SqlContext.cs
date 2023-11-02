@@ -4,18 +4,23 @@ using Microsoft.Extensions.Configuration;
 
 namespace Todapp.Data.Context
 {
-    public class DapperContext
+    public class SqlContext
     {
         private readonly IConfiguration _configuration;
         private readonly string _connectionString;
 
-
-        public DapperContext(IConfiguration configuration)
+        public SqlContext(IConfiguration configuration)
         {
             _configuration = configuration;
             _connectionString = _configuration.GetConnectionString("SqlConnection");
         }
-        
-        public IDbConnection CreateConnection() => new SqlConnection(_connectionString);
+
+        public SqlContext(string connectionString)
+        {
+            _connectionString = connectionString;
+        }
+
+        public SqlConnection CreateConnection() => new SqlConnection(_connectionString);
     }
+
 }

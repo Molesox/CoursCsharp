@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Cours01\Cours01.csproj" />
+    <ProjectReference Include="..\Todapp\Todapp.csproj" />
   </ItemGroup>
 
 </Project>
