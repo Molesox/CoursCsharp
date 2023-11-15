@@ -12,6 +12,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+  
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="dapper" Version="2.1.15" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.2" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />

@@ -62,39 +62,34 @@ namespace Cours01
         /// Draws 3 Christmas tree shapes using asterisks.
         /// </summary>
         /// <returns>A string representing the Christmas tree shape.</returns>
-        public static string DrawChristmasTree()
+        public static void DrawChristmasTree(int treeWidth, int repeatCount)
         {
-            string result = string.Empty;
-            for (var i = 0; i < 3; i++)
+            for (var i = 0; i < repeatCount; i++)
             {
-                for (var j = 0; j < 7; j += 2)
+                for (var j = 0; j < treeWidth; j += 2)
                 {
-                    int spaces = (7 - j) / 2;
+                    int spaces = (treeWidth - j) / 2;
 
                     for (var k = 0; k < spaces; k++)
                     {
-                        result += " ";
-                        // Console.Write(" ");
+                        Console.Write(" ");
                     }
 
                     for (var m = 0; m <= j; m++)
                     {
-                        result += "*";
-                        // Console.Write("*");
+                        Console.Write("*");
                     }
 
-                    for (var n = (7 - j) / 2; n < 7; n++)
+                    for (var n = (treeWidth - j) / 2; n < treeWidth; n++)
                     {
-                        result += " ";
-                        // Console.Write(" ");
+                        Console.Write(" ");
                     }
 
-                    result += "\n";
                     Console.WriteLine();
                 }
             }
-            return result;
         }
+
 
     }
 }
