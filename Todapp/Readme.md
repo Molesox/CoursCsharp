@@ -1,7 +1,0 @@
-- Create Entity classes
-- Create sql scripts
-- Add dapper to project: ```dotnet add package dapper```
-- Add IConfiguration for AppSettings.json : ```dotnet add package Microsoft.Extensions.Configuration```
-- Add sql client : ```dotnet add package  Microsoft.Data.SqlClient```
-- Create DapperContext.cs 
-- Add appsettings.json
