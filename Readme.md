@@ -21,7 +21,7 @@ cd CoursCsharp
 
 ## Structure des Cours
 
-Chaque cours a son propre dossier tel que [`Cours01`](Cours01/), [`Cours02`](Cours02/), etc.
+Chaque cours a son propre dossier tel que [`Cours01`](Cours01/), [`Cours02`](Cours02/), [`Cours03`](Cours03/),  [`Cours04`](Cours04/Readme.md),...
 
 ```bash
 cd Cours01
