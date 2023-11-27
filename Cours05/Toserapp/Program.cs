@@ -1,14 +1,14 @@
+using System.Diagnostics;
 using DataLibrary;
 using DataLibrary.Repositories;
 using DataLibrary.Services;
 using SharedLibrary.Models;
 using SharedLibrary.Repository;
 
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddScoped<IRepository<TodoItem>, TodoItemDapperRepository>(); 
+builder.Services.AddScoped<IRepository<TodoItem>, TodoItemDapperRepository>();
 builder.Services.AddScoped<IRepository<User>, UserADORepository>();
 builder.Services.AddScoped<ITodoItemService, TodoItemService>();
 
@@ -17,14 +17,13 @@ builder.Services.AddAuthorization();
 var app = builder.Build();
 
 app.UseDefaultFiles();
-
 app.UseStaticFiles();
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapGet("/api/todoitems/user/{userId}",
-    async  (int userId, ITodoItemService todoItemService) =>
+    async (int userId, ITodoItemService todoItemService) =>
             {
                 try
                 {
@@ -43,10 +42,8 @@ app.MapDelete("/api/todoitems/{todoItemID}", async (int todoItemID, ITodoItemSer
     try
     {
         var result = await todoItemService.TodoItemRepository.Delete(todoItemID);
-        if (!result)
-            return Results.Problem("Deletion failed.");
-        else
-            return Results.Ok();
+
+        return result ? Results.Ok() : Results.Problem("Deletion failed.");
     }
     catch (Exception ex)
     {

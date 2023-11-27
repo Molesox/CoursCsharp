@@ -44,6 +44,7 @@ namespace DataLibrary.Repositories
         private async Task<bool> DeleteTodoItemWithSubTasksAsync(int todoItemId)
         {
             using var connection = CreateConnection();
+            connection.Open();
             using var transaction = connection.BeginTransaction();
 
             try

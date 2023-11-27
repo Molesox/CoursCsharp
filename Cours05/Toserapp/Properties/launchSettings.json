@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "profiles": {
     "TodAPI": {
@@ -10,17 +9,4 @@
       "applicationUrl": "https://localhost:51977;http://localhost:51978"
     }
   }
-=======
-{
-  "profiles": {
-    "TodAPI": {
-      "commandName": "Project",
-      "launchBrowser": true,
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "applicationUrl": "https://localhost:51977;http://localhost:51978"
-    }
-  }
->>>>>>> efce0574c516519d851904d03954e7bab19ebf50
 }

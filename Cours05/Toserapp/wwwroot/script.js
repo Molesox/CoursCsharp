@@ -77,7 +77,6 @@ document.addEventListener('DOMContentLoaded', function ()
                 {
                     throw new Error('Deletion failed');
                 }
-                //return response.json();
             })
             .then(() =>
             {

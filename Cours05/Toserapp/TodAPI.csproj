@@ -23,9 +23,10 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.13" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
   </ItemGroup>
+
   <ItemGroup>
     <ProjectReference Include="../Shared/SharedLibrary.csproj" />
     <ProjectReference Include="../Data/DataLibrary.csproj" />
-
   </ItemGroup>
+  
 </Project>
