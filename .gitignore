@@ -3,3 +3,4 @@
 **/obj
 **/.DS_Store
 .DS_Store
+**/appsettings.json
