@@ -6,6 +6,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+  </ItemGroup>
+	
  <ItemGroup>
     <PackageReference Include="Dapper" Version="2.1.21" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.13" />
@@ -15,9 +20,15 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.13" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
   </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Shared\SharedLibrary.csproj" />
-    <ProjectReference Include="..\Data\DataLibrary.csproj" />
-  </ItemGroup>
+ <ItemGroup>
+   <ProjectReference Include="..\..\..\Data\DataLibrary.csproj" />
+   <ProjectReference Include="..\..\..\Shared\SharedLibrary.csproj" />
+ </ItemGroup>
+ <ItemGroup>
+	 
+   <Content Include="appsettings.json">
+     <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+   </Content>
+ </ItemGroup>
+	
 </Project>
